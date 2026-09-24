@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nguyen Tran Thai Huy — CV</title>
+  <style>
+    @page { size: A4; margin: 0.58in 0.66in; }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; padding: 0; background: #f2f2f2; }
+
+    body {
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+      line-height: 1.2;
+    }
+
+    .resume {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 0.58in 0.66in;
+      background: #fff;
+    }
+
+    header { text-align: center; }
+
+    h1 {
+      margin: 0 0 0.22em;
+      font-size: 22pt;
+      line-height: 25pt;
+      font-weight: 700;
+    }
+
+    .role { margin: 0 0 0.38em; font-size: 12pt; }
+    .contact { margin: 0 0 0.38em; }
+    a { color: inherit; text-decoration: none; }
+    .avatar { display: block; width: 2.45cm; height: 3.05cm; margin: 0 auto; object-fit: fill; }
+
+    section { margin-top: 0.75em; }
+
+    h2 {
+      margin: 0 0 0.38em;
+      padding-bottom: 0.12em;
+      border-bottom: 1px solid #000;
+      font-size: 14.4pt;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    p { margin: 0; }
+    .skills p + p { margin-top: 0; }
+    .entry, .project { margin: 0; }
+    .entry + ul, .project + ul { margin-top: 0.20em; }
+    .entry:not(:first-child), .project:not(:first-child) { margin-top: 0.42em; }
+
+    .entry-top, .entry-bottom, .project-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+    }
+
+    .entry-top strong, .project-top strong { font-weight: 700; }
+    .entry-top em, .entry-bottom, .project-subtitle { font-style: italic; }
+    .entry-top em, .entry-bottom span:last-child, .project-top em { text-align: right; white-space: nowrap; }
+
+    ul {
+      margin: 0.20em 0 0 1.25em;
+      padding: 0;
+    }
+
+    li { margin: 0 0 0.18em; padding-left: 0; }
+    li:last-child { margin-bottom: 0; }
+
+    @media print {
+      html, body { background: #fff; }
+      .resume { width: auto; min-height: 0; margin: 0; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>NGUYEN TRAN THAI HUY</h1>
+      <p class="role">AI Engineer | MLOps Engineer</p>
+      <p class="contact">Ho Chi Minh City, Vietnam &nbsp;|&nbsp; <a href="mailto:nguyentthuy11.work@gmail.com">nguyentthuy11.work@gmail.com</a></p>
+      <img class="avatar" src="avatar_cv_white.png" alt="Nguyen Tran Thai Huy">
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>Third-year <strong>Digital Business and Artificial Intelligence</strong> student targeting AI/ML Engineer and MLOps roles. Build reproducible, end-to-end ML systems from data pipelines and rigorous evaluation to deployable APIs across computer vision, forecasting, research analytics, and LLM-enabled applications.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Languages &amp; Data:</strong> Python, SQL, Latex</p>
+      <p><strong>Machine Learning - Deep Learning:</strong> Scikit-Learn, XGBoost, YOLO, LangGraph, Computer Vision, Pandas, Numpy, Forecasting, NetworkX, AI agents, PyTorch</p>
+      <p><strong>Engineering &amp; MLOps:</strong> FastAPI, Celery, SQLite, REST APIs, Git, reproducible ML pipelines, model evaluation</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <article class="entry">
+        <div class="entry-top"><strong>BAAI Lab, Faculty of Information Systems</strong><em>Oct. 2025 - Present</em></div>
+        <div class="entry-bottom"><span>Research Associate</span><span>Ho Chi Minh City, Vietnam</span></div>
+      </article>
+      <ul>
+        <li>Strengthen research execution through structured training in business analysis, research methodology, literature review, and scientific writing.</li>
+        <li>Apply foundations in machine learning, deep learning, robotics, and AI agents through lab-based learning and research activities.</li>
+      </ul>
+
+      <article class="entry">
+        <div class="entry-top"><strong>ITB Club</strong><em>Oct. 2024 - Present</em></div>
+        <div class="entry-bottom"><span>Human Resources Department Member</span><span>Ho Chi Minh City, Vietnam</span></div>
+      </article>
+      <ul>
+        <li>Co-organize the BI9 competition and club-wide initiatives, including volunteer programs and member-bonding events.</li>
+        <li>Plan and deliver academic and soft-skill training sessions, coordinating content, logistics, and member engagement.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <article class="project">
+        <div class="project-top"><strong>MDA App - Citation Network and Main-Path Analysis</strong><em>Jul. 2026 - Present</em></div>
+        <p class="project-subtitle">Research data application | Python, Pandas, NetworkX, SPLC, Command-Line tooling</p>
+      </article>
+      <ul>
+        <li>Engineered a command-line research pipeline that ingests Web of Science records, resolves CR/DOI citations, constructs directed citation networks, and identifies influential knowledge flows with Local, Global, and Key-Route SPLC.</li>
+        <li>Built audit-ready logs, network statistics, and Pajek/Gephi exports; achieved <strong>99.3%</strong> node-ID accuracy (452/455) and <strong>99.0% recall / 99.7% precision</strong> for citation edges against an independent 455-record oracle.</li>
+      </ul>
+
+      <article class="project">
+        <div class="project-top"><strong>ESG Multi-Agent Investment Research Pipeline</strong><em>Jun. 2026 - 2026</em></div>
+        <p class="project-subtitle">AI application backend | LangGraph, FastAPI, Celery, SQLite</p>
+      </article>
+      <ul>
+        <li>Developed an asynchronous investment-research service integrating SQLite market data, quantitative features, ESG-constrained Markowitz optimization, LangGraph agent debate, FastAPI, and Celery.</li>
+        <li>Improved reliability and reproducibility with persistent LLM caching, per-run result storage, walk-forward backtesting across <strong>8</strong> ablation strategies, and a <strong>283-test</strong> suite covering data, agents, APIs, and backtests.</li>
+      </ul>
+
+      <article class="project">
+        <div class="project-top"><strong>HRC2026 - Industrial Workpiece Object Detection</strong><em>May. 2026 - Jul. 2026</em></div>
+        <p class="project-subtitle">Computer vision research | YOLO, Python, experiment benchmarking</p>
+      </article>
+      <ul>
+        <li>Designed an episode-separated <strong>460 / 57 / 59</strong> train/validation/test split to benchmark <strong>6</strong> YOLO variants for workpiece sorting while preventing data leakage.</li>
+        <li>Recommended YOLO11n with augmentation and 960-pixel inputs for deployment, balancing accuracy and speed at <strong>mAP@50 0.981</strong>, <strong>mAP@50-95 0.822</strong>, and <strong>5.2 ms</strong> latency.</li>
+      </ul>
+
+      <article class="project">
+        <div class="project-top"><strong>Dynamic Pricing Demand Modeling</strong><em>Apr. 2026 - Jun. 2026</em></div>
+        <p class="project-subtitle">Applied ML research | Python, Scikit-learn, Feature Engineering, Model Explainability</p>
+      </article>
+      <ul>
+        <li>Built a reproducible weekly demand-forecasting pipeline across <strong>35,548</strong> training rows, <strong>9,266</strong> test rows, and <strong>38</strong> engineered features; benchmarked tree-based models against an interpretable baseline.</li>
+        <li>Selected a log-transformed HistGradientBoosting model: <strong>RMSLE 0.322</strong>, <strong>R<sup>2</sup> 0.536</strong>; used permutation importance and price-sensitivity analysis to support transparent decisions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <article class="entry">
+        <div class="entry-top"><strong>University of Economics and Law (UEL), Vietnam National University Ho Chi Minh City</strong><em>Expected 2028</em></div>
+        <div class="entry-bottom"><span>Digital Business and Artificial Intelligence | Third-year student</span><span>GPA: <strong>3.34 / 4.00</strong></span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <article class="entry">
+        <div class="entry-top"><strong>Certificate: Enhancing Capacity for Interdisciplinary Applied AI Research and International Publication for Students</strong></div>
+        <div class="entry-bottom"><span>University of Sciences, Hue University</span><span>Vietnam</span></div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
